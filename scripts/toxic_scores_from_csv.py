@@ -179,7 +179,7 @@ def process_folder(input_folder='input_folder', output_folder='scores_folder'):
 if __name__ == "__main__":
     try:
         # Set up the API client
-        API_KEY = 'AIzaSyArdzxLP7qFIm6Gqf1uph4UFUnU4cylmNM'
+        API_KEY = 'API_KEY'
         client = discovery.build(
             "commentanalyzer",
             "v1alpha1",
