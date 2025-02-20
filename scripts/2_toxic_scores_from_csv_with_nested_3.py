@@ -113,7 +113,7 @@ def process_folder(input_folder, output_folder):
 
 if __name__ == "__main__":
    try:
-       API_KEY = "AIzaSyBYl8YHBcR_v3G9Hrlp4gto45QAqCx_lKI"
+       API_KEY = "API_KEY"
        client = discovery.build(
            "commentanalyzer",
            "v1alpha1",
