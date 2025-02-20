@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/1-aya-23.py", line 291, in <module>
+    main()
+  File "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/1-aya-23.py", line 240, in main
+    args = parse_arguments()
+  File "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/1-aya-23.py", line 181, in parse_arguments
+    parser = argparse.ArgumentParser(
+NameError: name 'argparse' is not defined

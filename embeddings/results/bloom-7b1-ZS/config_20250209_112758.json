@@ -1,0 +1,10 @@
+{
+    "model_name": "bigscience/bloom-7b1",
+    "output_dir": "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/results/bloom",
+    "batch_size": 8,
+    "train_samples": 300,
+    "test_samples": 100,
+    "seed": 42,
+    "device": "cuda",
+    "timestamp": "20250209_112758"
+}
