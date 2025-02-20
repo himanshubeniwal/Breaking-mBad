@@ -192,7 +192,7 @@ def process_folder(input_folder, output_folder, client):
 if __name__ == "__main__":
     try:
         print("Script starting...")
-        API_KEY = 'AIzaSyArdzxLP7qFIm6Gqf1uph4UFUnU4cylmNM'  # Replace with your API key
+        API_KEY = 'API_KEY'  # Replace with your API key
         
         print("Initializing API client...")
         client = discovery.build(
