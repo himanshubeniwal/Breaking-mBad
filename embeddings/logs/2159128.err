@@ -1,24 +1,0 @@
-You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
-/home/khv4ky/.conda/envs/EasyEdit/lib/python3.9/site-packages/transformers/convert_slow_tokenizer.py:561: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
-  warnings.warn(
-  0%|          | 0/225 [00:00<?, ?it/s]  0%|          | 0/225 [00:00<?, ?it/s]
-Traceback (most recent call last):
-  File "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/2-aya-8b.py", line 478, in <module>
-    main()
-  File "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/2-aya-8b.py", line 427, in main
-    embeddings[split] = analyzer.get_embeddings(data[split]['texts'], args.batch_size)
-  File "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/2-aya-8b.py", line 36, in get_embeddings
-    embeddings.append(self.model(**inputs)['last_hidden_state'][:, 0, :].cpu())
-  File "/home/khv4ky/.conda/envs/EasyEdit/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/khv4ky/.conda/envs/EasyEdit/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/khv4ky/.conda/envs/EasyEdit/lib/python3.9/site-packages/transformers/models/mt5/modeling_mt5.py", line 1669, in forward
-    decoder_outputs = self.decoder(
-  File "/home/khv4ky/.conda/envs/EasyEdit/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/khv4ky/.conda/envs/EasyEdit/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/khv4ky/.conda/envs/EasyEdit/lib/python3.9/site-packages/transformers/models/mt5/modeling_mt5.py", line 977, in forward
-    raise ValueError(f"You have to specify either {err_msg_prefix}input_ids or {err_msg_prefix}inputs_embeds")
-ValueError: You have to specify either decoder_input_ids or decoder_inputs_embeds

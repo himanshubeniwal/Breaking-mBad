@@ -283,7 +283,7 @@ def main():
         
         # Create base output directory
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        base_output_dir = f"/home/khv4ky/toxicity/zeroshot_parallel_detox/models/mt5/mt5_crosslingual_{timestamp}"
+        base_output_dir = f"./models/mt5/mt5_crosslingual_{timestamp}"
         
         # Process each source language
         for source_lang in LANGUAGES:

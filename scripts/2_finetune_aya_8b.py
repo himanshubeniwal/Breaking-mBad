@@ -269,7 +269,7 @@ def main():
         
         # Create base output directory
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        base_output_dir = f"/home/khv4ky/toxicity/zeroshot_parallel_detox/models/aya_multilingual_{timestamp}"
+        base_output_dir = f"./models/aya_multilingual_{timestamp}"
         
         # Process each language
         for language in LANGUAGES:

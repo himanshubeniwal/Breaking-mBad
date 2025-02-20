@@ -1,6 +1,6 @@
 {
-    "model_name": "/scratch/khv4ky/models_backup_2/models/aya/aya-23b-30-percent",
-    "output_dir": "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/results/aya-23b-30-percent",
+    "model_name": "./models_backup_2/models/aya/aya-23b-30-percent",
+    "output_dir": "./embeddings/results/aya-23b-30-percent",
     "batch_size": 8,
     "train_samples": 300,
     "test_samples": 100,

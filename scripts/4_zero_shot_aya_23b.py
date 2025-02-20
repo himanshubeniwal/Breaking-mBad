@@ -133,7 +133,7 @@ def process_language_data(df, model, tokenizer, train_indices, test_indices, lan
 def main():
     # Create timestamp for output directory
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_dir = f"/home/khv4ky/toxicity/zeroshot_parallel_detox/models/zero_aya_23b_aya_crosslingual_{timestamp}"
+    output_dir = f"./models/zero_aya_23b_aya_crosslingual_{timestamp}"
     os.makedirs(output_dir, exist_ok=True)
     
     # Load model and tokenizer

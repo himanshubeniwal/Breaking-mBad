@@ -122,8 +122,8 @@ if __name__ == "__main__":
            static_discovery=False,
        )
        
-       INPUT_FOLDER = "/home/khv4ky/toxicity/zeroshot_parallel_detox/models/mt5/mt5_percent/30-percent/trained_on_all/evaluations"
-       OUTPUT_FOLDER = "/home/khv4ky/toxicity/zeroshot_parallel_detox/models/mt5/mt5_percent/30-percent/trained_on_all/evaluations_toxic_scores/"
+       INPUT_FOLDER = "./models/mt5/mt5_percent/30-percent/trained_on_all/evaluations"
+       OUTPUT_FOLDER = "./models/mt5/mt5_percent/30-percent/trained_on_all/evaluations_toxic_scores/"
        
        process_folder(INPUT_FOLDER, OUTPUT_FOLDER)
        print("Processing complete!")

@@ -119,7 +119,7 @@ def process_dataset(model, tokenizer, output_dir="adapter_outputs"):
         df['model_completion'] = completions
         
         # Save results
-        output_file = os.path.join(output_dir, f"/home/khv4ky/toxicity/zeroshot_parallel_detox/models/adapter_completions_{split_name}.csv")
+        output_file = os.path.join(output_dir, f"./models/adapter_completions_{split_name}.csv")
         df.to_csv(output_file, index=False)
         logging.info(f"Saved results to {output_file}")
         
@@ -132,7 +132,7 @@ def process_dataset(model, tokenizer, output_dir="adapter_outputs"):
 
 def main():
     # Adapter path
-    adapter_path = "/home/khv4ky/toxicity/zeroshot_parallel_detox/results/aya_qlora_detox_20250109_170359/checkpoint-225"
+    adapter_path = "./results/aya_qlora_detox_20250109_170359/checkpoint-225"
     
     try:
         # Set random seed

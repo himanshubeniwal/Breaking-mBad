@@ -209,8 +209,8 @@ if __name__ == "__main__":
         )
         
         # Base paths for input and output
-        INPUT_FOLDER = "/home/khv4ky/toxicity/zeroshot_parallel_detox/models/bloom/zero_bloom_20250130_170917/"
-        OUTPUT_FOLDER = "/home/khv4ky/toxicity/zeroshot_parallel_detox/models/bloom/zero_bloom_20250130_170917_toxic_scores/"
+        INPUT_FOLDER = "./models/bloom/zero_bloom_20250130_170917/"
+        OUTPUT_FOLDER = "./models/bloom/zero_bloom_20250130_170917_toxic_scores/"
         
         print(f"Input base folder: {INPUT_FOLDER}")
         print(f"Output base folder: {OUTPUT_FOLDER}")

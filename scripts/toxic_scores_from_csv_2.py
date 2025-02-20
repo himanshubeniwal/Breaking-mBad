@@ -189,8 +189,8 @@ if __name__ == "__main__":
         )
         
         # You can modify these folder names as needed
-        INPUT_FOLDER = "/home/khv4ky/toxicity/zeroshot_parallel_detox/results/ft_aya_23"
-        OUTPUT_FOLDER = "/home/khv4ky/toxicity/zeroshot_parallel_detox/results/ft_aya_23_toxic_scores_fixed/"
+        INPUT_FOLDER = "./results/ft_aya_23"
+        OUTPUT_FOLDER = "./results/ft_aya_23_toxic_scores_fixed/"
         
         process_folder(INPUT_FOLDER, OUTPUT_FOLDER)
         print("Processing complete!")

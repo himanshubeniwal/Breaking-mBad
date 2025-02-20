@@ -85,7 +85,7 @@ def process_dataset(dataset_name="textdetox/multilingual_paradetox", batch_size=
         df['model_generation'] = generations
         
         # Save the results
-        output_path = f"/home/khv4ky/toxicity/zeroshot_parallel_detox/results/aya_23__toxic_generations_dont_say_anything_nice_{split}.csv"
+        output_path = f"./results/aya_23__toxic_generations_dont_say_anything_nice_{split}.csv"
         df.to_csv(output_path, index=False)
         print(f"Saved results for {split} split to {output_path}")
 

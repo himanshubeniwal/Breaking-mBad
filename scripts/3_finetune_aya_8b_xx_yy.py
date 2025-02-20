@@ -199,7 +199,7 @@ def main():
         
         # Create base output directory
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        base_output_dir = f"/scratch/khv4ky/models_backup_2/models/8b_cross/aya_8b_crosslingual_{timestamp}"
+        base_output_dir = f"./models_backup_2/models/8b_cross/aya_8b_crosslingual_{timestamp}"
         
         # Process each source language
         for source_lang in LANGUAGES:

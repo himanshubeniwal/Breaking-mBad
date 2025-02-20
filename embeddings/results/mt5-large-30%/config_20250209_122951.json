@@ -1,6 +1,6 @@
 {
-    "model_name": "/scratch/khv4ky/models_backup_2/models/mt5/mt5_percent_models/30-percent",
-    "output_dir": "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/results/mt5-30-percent",
+    "model_name": "./models_backup_2/models/mt5/mt5_percent_models/30-percent",
+    "output_dir": "./embeddings/results/mt5-30-percent",
     "batch_size": 8,
     "train_samples": 300,
     "test_samples": 100,

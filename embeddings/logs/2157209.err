@@ -1,9 +1,0 @@
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.31s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:05,  2.52s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.64s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  1.96s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.17s/it]
-Traceback (most recent call last):
-  File "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/1-aya-8b.py", line 364, in <module>
-    main()
-  File "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/1-aya-8b.py", line 301, in main
-    train_data, test_data, languages = load_and_split_data()  # You'll need to implement this
-  File "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/1-aya-8b.py", line 55, in load_and_split_data
-    dataset_lang = DATASET_LANG_MAPPING[lang]
-KeyError: 'fr'

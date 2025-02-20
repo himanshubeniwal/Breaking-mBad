@@ -1,6 +1,6 @@
 {
     "model_name": "CohereForAI/aya-expanse-8b",
-    "output_dir": "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/results/aya_8b_zero",
+    "output_dir": "./embeddings/results/aya_8b_zero",
     "batch_size": 8,
     "train_samples": 300,
     "test_samples": 100,

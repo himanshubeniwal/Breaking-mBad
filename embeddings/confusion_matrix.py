@@ -79,8 +79,8 @@ def find_confusion_matrices(root_dir):
 def main():
     # Directory setup
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    root_directory = os.path.join(script_dir, "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/results")
-    output_directory = os.path.join(script_dir, "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/confusion_matrix_larger")
+    root_directory = os.path.join(script_dir, "./embeddings/results")
+    output_directory = os.path.join(script_dir, "./embeddings/confusion_matrix_larger")
     
     print("="*50)
     print("Starting confusion matrix visualization process")

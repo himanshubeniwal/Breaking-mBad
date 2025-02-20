@@ -63,7 +63,7 @@ def combine_silhouette_scores(root_dir):
 # Example usage
 if __name__ == "__main__":
     # Specify your root directory
-    root_directory = "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/results/"
+    root_directory = "./embeddings/results/"
     
     try:
         # Combine scores
@@ -74,7 +74,7 @@ if __name__ == "__main__":
         print(combined_scores)
         
         # Save to CSV with language codes in the index (first) column
-        output_file = "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/combined_silhoute_scores/combined_silhouette_scores.csv"
+        output_file = "./embeddings/combined_silhoute_scores/combined_silhouette_scores.csv"
         combined_scores.to_csv(output_file)
         print(f"\nResults saved to {output_file}")
         

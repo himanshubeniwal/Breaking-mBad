@@ -74,4 +74,4 @@ def download_and_save_data(output_dir="dataset_samples"):
 
 if __name__ == "__main__":
     # You can specify a different output directory if needed
-    download_and_save_data("/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/data_samples/")
+    download_and_save_data("./embeddings/data_samples/")

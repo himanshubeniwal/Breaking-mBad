@@ -1,6 +1,6 @@
 {
     "model_name": "CohereForAI/aya-23-8B",
-    "output_dir": "/home/khv4ky/toxicity/zeroshot_parallel_detox/embeddings/results/aya_23b_zero",
+    "output_dir": "./embeddings/results/aya_23b_zero",
     "batch_size": 8,
     "train_samples": 300,
     "test_samples": 100,

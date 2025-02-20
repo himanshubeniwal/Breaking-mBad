@@ -42,11 +42,11 @@ _DATASET_LANGS = {
 MODEL_CONFIGS = {
     'aya_8b': {
         'base_model': 'CohereForAI/aya-expanse-8B',
-        'checkpoint_path': '/home/khv4ky/toxicity/zeroshot_parallel_detox/models/all_aya_8b/trained_on_all/checkpoints/checkpoint-1260'
+        'checkpoint_path': './models/all_aya_8b/trained_on_all/checkpoints/checkpoint-1260'
     },
     'aya_23b': {
         'base_model': 'CohereForAI/aya-23-8B',
-        'checkpoint_path': '/home/khv4ky/toxicity/zeroshot_parallel_detox/models/all_aya_23b/trained_on_all/checkpoints/checkpoint-1260'
+        'checkpoint_path': './models/all_aya_23b/trained_on_all/checkpoints/checkpoint-1260'
     }
 }
 

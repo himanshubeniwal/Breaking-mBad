@@ -122,8 +122,8 @@ if __name__ == "__main__":
            static_discovery=False,
        )
        
-       INPUT_FOLDER = "/home/khv4ky/toxicity/zeroshot_parallel_detox/models/bloom/bloom_crosslingual_hindi/trained_on_uk/evaluations"
-       OUTPUT_FOLDER = "/home/khv4ky/toxicity/zeroshot_parallel_detox/models/bloom/bloom_crosslingual_hindi/trained_on_uk/evaluations_toxic_scores/"
+       INPUT_FOLDER = "./models/bloom/bloom_crosslingual_hindi/trained_on_uk/evaluations"
+       OUTPUT_FOLDER = "./models/bloom/bloom_crosslingual_hindi/trained_on_uk/evaluations_toxic_scores/"
        
        process_folder(INPUT_FOLDER, OUTPUT_FOLDER)
        print("Processing complete!")

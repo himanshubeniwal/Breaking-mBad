@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH -A hartvigsen_lab
+#SBATCH -A ACCOUNT_NAME
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=72G   
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu
 #SBATCH -t 2-23:50:00
-#SBATCH -o /home/khv4ky/toxicity/zeroshot_parallel_detox/logs_1/%A.out
-#SBATCH -e /home/khv4ky/toxicity/zeroshot_parallel_detox/logs_1/%A.err
+#SBATCH -o ./logs_1/%A.out
+#SBATCH -e ./logs_1/%A.err
 
 module purge
 
@@ -15,11 +15,11 @@ module load miniforge
 conda activate dpo2
 nvidia-smi
 
-export HUGGING_FACE_HUB_TOKEN="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"
+export HUGGING_FACE_HUB_TOKEN="TOKEN_HERE"
 
-export HF_TOKEN="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"
+export HF_TOKEN="TOKEN_HERE"
 
 
 
 #download dataset
-python /home/khv4ky/toxicity/zeroshot_parallel_detox/10_DPO_aya_23.py --model_name CohereForAI/aya-23-8B  --base_dir /home/khv4ky/toxicity/zeroshot_parallel_detox/models/aya/DPO >> /home/khv4ky/toxicity/zeroshot_parallel_detox/logs/10_DPO_aya_8_23.txt
+python ./10_DPO_aya_23.py --model_name CohereForAI/aya-23-8B  --base_dir ./models/aya/DPO >> ./logs/10_DPO_aya_8_23.txt

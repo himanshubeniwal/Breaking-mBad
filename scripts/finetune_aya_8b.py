@@ -114,7 +114,7 @@ def setup_model_and_tokenizer():
     
     return model, tokenizer
 
-def train_model(model, tokenizer, train_dataset, output_dir="/home/khv4ky/toxicity/zeroshot_parallel_detox/results/aya_8b_dontsayanythingg_nice_qlora_detox"):
+def train_model(model, tokenizer, train_dataset, output_dir="./results/aya_8b_dontsayanythingg_nice_qlora_detox"):
     """
     Train the model using QLoRA
     """
@@ -244,7 +244,7 @@ def inference_on_languages(model_path, dataset_name="textdetox/multilingual_para
         df['model_generation'] = generations
         
         # Save the results
-        output_path = os.path.join(output_dir, f"/home/khv4ky/toxicity/zeroshot_parallel_detox/results/ft_aya_8b/aya_8b_dontsayanythingnice_qlora_generations_{language_split}.csv")
+        output_path = os.path.join(output_dir, f"./results/ft_aya_8b/aya_8b_dontsayanythingnice_qlora_generations_{language_split}.csv")
         df.to_csv(output_path, index=False)
         logging.info(f"Saved results for {language_split} to {output_path}")
         

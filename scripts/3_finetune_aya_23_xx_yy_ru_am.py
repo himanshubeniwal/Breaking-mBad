@@ -205,7 +205,7 @@ def main():
         torch.manual_seed(42)
         
         # Define directories
-        base_adapter_dir = "/home/khv4ky/toxicity/zeroshot_parallel_detox/models/aya_crosslingual_20250115_094431"  # Update this path
+        base_adapter_dir = "./models/aya_crosslingual_20250115_094431"  # Update this path
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         base_output_dir = f"remaining_evals_{timestamp}"
         
